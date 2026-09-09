@@ -3,612 +3,616 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aishwarya Mudravalli Ningaraju | Cloud &amp; Data Engineer</title>
+<title>Aishwarya Mudravalli Ningaraju | Cloud &amp; Data Professional</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#ffffff;
-    --bg-soft:#fff5f8;
-    --card:#fffbfc;
-    --pink:#e8a9bc;
-    --pink-deep:#b95c7c;
-    --pink-pale:#fbe4ea;
-    --pink-line:#f1d6e0;
-    --text:#2c2530;
-    --muted:#8a7f89;
-    --radius:12px;
-    --maxw:1040px;
-  }
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth; scroll-padding-top:64px;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
-  }
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Inter', system-ui, sans-serif;
-    line-height:1.65;
-  }
-  h1,h2,h3{
-    font-family:'Fraunces', Georgia, serif;
-    font-weight:500;
-    margin:0 0 .5em 0;
-    letter-spacing:-0.01em;
-    color:#241f27;
-  }
-  .mono{font-family:'IBM Plex Mono', ui-monospace, monospace;}
-  a{color:var(--pink-deep);}
-  a:focus-visible, button:focus-visible{
-    outline:2px solid var(--pink-deep);
-    outline-offset:3px;
-  }
-  .wrap{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:0 32px;
-  }
-  @media (max-width:600px){ .wrap{padding:0 20px;} }
-
-  /* ---------- top nav ---------- */
-  .topnav{
-    position:sticky; top:0; z-index:60;
-    background:rgba(255,255,255,0.9);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--pink-line);
-  }
-  .topnav-inner{
-    max-width:var(--maxw);
-    margin:0 auto;
-    padding:16px 32px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-  }
-  @media (max-width:600px){ .topnav-inner{padding:14px 20px;} }
-  .brand{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:16px;
-    color:var(--text);
-    text-decoration:none;
-    white-space:nowrap;
-  }
-  .brand span{color:var(--pink-deep);}
-  .nav-links{
-    display:flex;
-    gap:26px;
-    list-style:none;
-    margin:0; padding:0;
-  }
-  .nav-links a{
-    text-decoration:none;
-    color:var(--muted);
-    font-size:13.5px;
-    font-weight:500;
-    padding-bottom:4px;
-    border-bottom:2px solid transparent;
-    transition:color .2s, border-color .2s;
-  }
-  .nav-links a.active, .nav-links a:hover{
-    color:var(--pink-deep);
-    border-color:var(--pink-deep);
-  }
-  @media (max-width:700px){ .nav-links{display:none;} }
-
-  /* ---------- hero ---------- */
-  header.hero{
-    padding:76px 0 0;
-    background:linear-gradient(180deg, var(--bg-soft), var(--bg) 75%);
-    border-bottom:1px solid var(--pink-line);
-  }
-  .eyebrow{
-    font-size:12px;
-    letter-spacing:.16em;
-    text-transform:uppercase;
-    color:var(--pink-deep);
-    margin-bottom:16px;
-    font-weight:600;
-  }
-  h1.name{
-    font-size:clamp(32px, 5vw, 50px);
-    line-height:1.1;
-    max-width:760px;
-  }
-  .role-line{
-    color:var(--muted);
-    font-size:clamp(16px,2.4vw,19px);
-    max-width:640px;
-    margin-bottom:26px;
-  }
-  .tagline{
-    font-family:'Fraunces', Georgia, serif;
-    font-style:italic;
-    font-size:clamp(19px,2.6vw,23px);
-    max-width:600px;
-    color:#3a2f38;
-    border-left:2px solid var(--pink);
-    padding-left:18px;
-    margin:26px 0 32px;
-  }
-  .hero-links{
-    display:flex; flex-wrap:wrap; gap:14px;
-    font-size:14px; color:var(--muted);
-    align-items:center;
-    margin-bottom:44px;
-  }
-  .hero-links a{
-    color:var(--text); text-decoration:none;
-    border:1px solid var(--pink-line);
-    padding:9px 16px; border-radius:24px;
-  }
-  .hero-links a:hover{border-color:var(--pink-deep); color:var(--pink-deep); background:var(--pink-pale);}
-  .badge{
-    background:var(--pink-deep);
-    color:#fff;
-    padding:9px 16px;
-    border-radius:24px;
-    font-size:13px;
-    font-weight:600;
+  :root {
+    --bg: #FFF6FA;
+    --surface: #FFFFFF;
+    --surface-2: #FDEBF3;
+    --pink: #F3A8C9;
+    --pink-deep: #D9698F;
+    --pink-line: #F6D4E4;
+    --ink: #3A2734;
+    --ink-soft: #7A5C6C;
+    --ink-faint: #B79AAA;
+    --shadow: 0 10px 30px -14px rgba(217, 105, 143, 0.35);
+    --radius: 18px;
+    --serif: "Quicksand", "Segoe UI", sans-serif;
+    --sans: "Work Sans", "Segoe UI", Arial, sans-serif;
   }
 
-  /* stats strip */
-  .stats-strip{
-    border-top:1px solid var(--pink-line);
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-  }
-  @media (max-width:700px){ .stats-strip{grid-template-columns:repeat(2,1fr);} }
-  .stat{
-    padding:26px 28px;
-    border-right:1px solid var(--pink-line);
-  }
-  .stat:last-child{border-right:none;}
-  @media (max-width:700px){
-    .stat:nth-child(2n){border-right:none;}
-    .stat{border-bottom:1px solid var(--pink-line);}
-  }
-  .stat .num{
-    font-family:'Fraunces', serif;
-    font-size:28px;
-    color:var(--pink-deep);
-    display:block;
-    margin-bottom:2px;
-  }
-  .stat .label{font-size:12.5px; color:var(--muted); letter-spacing:.02em;}
-
-  /* ---------- sections ---------- */
-  section{
-    padding:72px 0;
-    border-bottom:1px solid var(--pink-line);
-  }
-  .section-head{
-    display:flex;
-    align-items:baseline;
-    gap:14px;
-    margin-bottom:12px;
-  }
-  .section-head .idx{
-    font-family:'IBM Plex Mono', monospace;
-    color:var(--pink);
-    font-size:13px;
-  }
-  section h2{font-size:26px;}
-  .section-intro{color:var(--muted); max-width:640px; margin-bottom:44px; font-size:15px;}
-
-  .tag{
-    display:inline-block;
-    font-family:'IBM Plex Mono', monospace;
-    font-size:10.5px;
-    letter-spacing:.08em;
-    padding:4px 11px;
-    border-radius:20px;
-    background:var(--pink-pale);
-    color:var(--pink-deep);
-    margin-bottom:10px;
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #2B1B24;
+      --surface: #35222D;
+      --surface-2: #3F2733;
+      --pink: #F3A8C9;
+      --pink-deep: #F6B8D2;
+      --pink-line: #563345;
+      --ink: #F8E9F0;
+      --ink-soft: #D9B9C9;
+      --ink-faint: #9C7A8B;
+      --shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.5);
+    }
   }
 
-  /* summary */
-  .summary-text{
-    font-size:16.5px;
-    max-width:760px;
-    color:#463d47;
-  }
-  .summary-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:32px;}
-  @media (max-width:700px){ .summary-grid{grid-template-columns:1fr;} }
-  .summary-card{
-    background:var(--card);
-    border:1px solid var(--pink-line);
-    border-radius:var(--radius);
-    padding:22px 24px;
-  }
-  .summary-card h3{font-size:13px; color:var(--pink-deep); text-transform:uppercase; letter-spacing:.08em; margin-bottom:14px; font-family:'Inter',sans-serif; font-weight:600;}
-  .summary-card ul{margin:0; padding-left:18px; color:var(--text); font-size:14.5px;}
-  .summary-card li{margin-bottom:7px;}
-
-  /* experience timeline */
-  .timeline{border-left:1px solid var(--pink-line); margin-left:6px; max-width:800px;}
-  .tl-item{position:relative; padding:0 0 44px 30px;}
-  .tl-item:last-child{padding-bottom:0;}
-  .tl-dot{
-    position:absolute; left:-6px; top:5px;
-    width:11px; height:11px; border-radius:50%;
-    background:#fff; border:2px solid var(--pink-deep);
-  }
-  .tl-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:6px 16px;}
-  .tl-role{font-weight:600; font-size:17.5px; font-family:'Fraunces',serif;}
-  .tl-dates{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--muted);}
-  .tl-org{color:var(--pink-deep); font-size:14px; margin-bottom:12px; font-weight:500;}
-  .tl-item ul{margin:0; padding-left:18px; font-size:14.5px; color:#463d47;}
-  .tl-item li{margin-bottom:6px;}
-
-  /* education */
-  .edu-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
-  @media (max-width:700px){ .edu-grid{grid-template-columns:1fr;} }
-  .edu-card{
-    background:var(--card);
-    border:1px solid var(--pink-line);
-    border-radius:var(--radius);
-    padding:24px;
-  }
-  .edu-card .tl-dates{display:block; margin-bottom:10px;}
-  .edu-card h3{font-size:18px; margin-bottom:4px;}
-  .edu-card .school{color:var(--pink-deep); font-size:14px; font-weight:500; margin-bottom:10px;}
-  .edu-card p{font-size:14px; color:var(--muted); margin:0;}
-
-  /* projects */
-  .card-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
-  @media (max-width:700px){ .card-grid{grid-template-columns:1fr;} }
-  .card{
-    background:var(--card);
-    border:1px solid var(--pink-line);
-    border-radius:var(--radius);
-    padding:24px;
-    transition:border-color .2s, box-shadow .2s, transform .2s;
-  }
-  .card:hover{border-color:var(--pink); box-shadow:0 8px 24px rgba(185,92,124,0.1); transform:translateY(-2px);}
-  .card h3{font-size:17px; margin-bottom:9px;}
-  .card p{font-size:14px; color:var(--muted); margin:0 0 14px;}
-  .chip-row{display:flex; flex-wrap:wrap; gap:6px;}
-  .chip{
-    font-family:'IBM Plex Mono', monospace;
-    font-size:11px;
-    padding:4px 9px;
-    border-radius:6px;
-    background:#fff;
-    border:1px solid var(--pink-line);
-    color:var(--pink-deep);
+  :root[data-theme="dark"] {
+    --bg: #2B1B24;
+    --surface: #35222D;
+    --surface-2: #3F2733;
+    --pink: #F3A8C9;
+    --pink-deep: #F6B8D2;
+    --pink-line: #563345;
+    --ink: #F8E9F0;
+    --ink-soft: #D9B9C9;
+    --ink-faint: #9C7A8B;
+    --shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.5);
   }
 
-  /* skills */
-  .skills-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:28px 40px;}
-  @media (max-width:700px){ .skills-grid{grid-template-columns:1fr;} }
-  .skill-col h3{
-    font-size:13px; text-transform:uppercase; letter-spacing:.08em;
-    font-family:'Inter',sans-serif; font-weight:600; color:var(--text);
-    margin-bottom:16px;
-    padding-bottom:10px;
-    border-bottom:1px solid var(--pink-line);
-  }
-  .skill-list{display:flex; flex-wrap:wrap; gap:8px;}
-  .skill-list .chip{background:#fff; border:1px solid var(--pink-line); color:var(--text);}
+  * { box-sizing: border-box; }
 
-  /* certifications */
-  .cert-list{display:flex; flex-direction:column; gap:0; max-width:760px; border-top:1px solid var(--pink-line);}
-  .cert-row{
-    display:flex; justify-content:space-between; align-items:baseline;
-    padding:16px 4px;
-    border-bottom:1px solid var(--pink-line);
-    font-size:14.5px;
-    gap:16px; flex-wrap:wrap;
-  }
-  .cert-row b{color:var(--text); font-weight:600; font-family:'Fraunces',serif; font-size:15.5px;}
-  .cert-row span{color:var(--muted); font-size:13px;}
+  html { scroll-behavior: smooth; }
 
-  /* contact / footer */
-  footer{
-    padding:76px 0 60px;
-    background:var(--bg-soft);
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
   }
-  footer h2{margin-bottom:16px;}
-  footer p{color:var(--muted); max-width:520px;}
-  .contact-links{display:flex; flex-wrap:wrap; gap:16px; margin-top:24px;}
-  .contact-links a{
-    text-decoration:none; color:var(--pink-deep);
-    border:1px solid var(--pink);
-    background:#fff;
-    padding:11px 18px;
-    border-radius:var(--radius);
-    font-size:14px;
-    font-weight:500;
+
+  a { color: var(--pink-deep); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--pink-deep); outline-offset: 3px; border-radius: 4px; }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    max-width: 1180px;
+    margin: 0 auto;
+    min-height: 100vh;
   }
-  .contact-links a:hover{background:var(--pink-pale);}
-  .foot-note{margin-top:52px; font-size:12px; color:var(--muted); opacity:.8;}
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 44px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--pink-line);
+  }
+
+  .brand {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--ink);
+  }
+  .brand span { display: block; font-family: var(--sans); font-weight: 400; font-size: 0.8rem; color: var(--ink-soft); margin-top: 4px; }
+
+  .nav { margin-top: 48px; display: flex; flex-direction: column; gap: 4px; }
+  .nav a {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    padding: 9px 12px;
+    border-radius: 10px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .nav a:hover { background: var(--surface-2); color: var(--ink); text-decoration: none; }
+
+  .sidebar-foot { font-size: 0.78rem; color: var(--ink-faint); }
+  .sidebar-foot .loc { color: var(--pink-deep); font-weight: 600; margin-bottom: 6px; display: block; }
+
+  /* Mobile nav */
+  .mobile-bar { display: none; }
+
+  /* Main content */
+  main { padding: 56px 48px 40px; }
+  section { padding-bottom: 76px; scroll-margin-top: 24px; }
+  section + section { border-top: 1px solid var(--pink-line); padding-top: 60px; }
+
+  .eyebrow {
+    color: var(--pink-deep);
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0 0 6px;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 0 0 20px;
+    color: var(--ink);
+  }
+
+  .section-intro { color: var(--ink-soft); max-width: 60ch; margin: -10px 0 28px; font-size: 0.97rem; }
+
+  /* Hero */
+  #top { padding-top: 30px; border-top: none; }
+  .hero-name {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: clamp(2.1rem, 4vw, 3rem);
+    line-height: 1.12;
+    margin: 6px 0 10px;
+  }
+  .hero-role { font-size: 1.1rem; color: var(--pink-deep); font-weight: 600; margin: 0 0 18px; }
+  .hero-line { max-width: 52ch; color: var(--ink-soft); font-size: 1.02rem; margin: 0 0 28px; }
+
+  .hero-contact { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--surface-2); color: var(--ink);
+    padding: 9px 16px; border-radius: 999px; font-size: 0.88rem; font-weight: 500;
+    border: 1px solid var(--pink-line);
+  }
+  .chip.link { color: var(--pink-deep); }
+  .chip.link:hover { background: var(--pink); color: #fff; text-decoration: none; }
+
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--pink-line);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    box-shadow: var(--shadow);
+  }
+  .stat .num { font-family: var(--serif); font-weight: 700; font-size: 1.7rem; color: var(--pink-deep); }
+  .stat .label { font-size: 0.82rem; color: var(--ink-soft); margin-top: 2px; }
+
+  /* Summary */
+  .summary-text { max-width: 66ch; color: var(--ink-soft); font-size: 1rem; margin-bottom: 34px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .two-col h3 { font-family: var(--serif); font-size: 1rem; margin: 0 0 12px; color: var(--ink); }
+  .two-col ul { margin: 0; padding-left: 18px; color: var(--ink-soft); font-size: 0.94rem; }
+  .two-col li { margin-bottom: 8px; }
+
+  /* Experience */
+  .role {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 24px;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--pink-line);
+  }
+  .role:last-child { border-bottom: none; padding-bottom: 0; }
+  .role:first-child { padding-top: 0; }
+  .role-meta { }
+  .tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--pink-deep);
+    background: var(--surface-2);
+    border-radius: 999px;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+  }
+  .role-dates { font-size: 0.82rem; color: var(--ink-faint); }
+  .role-title { font-family: var(--serif); font-weight: 700; font-size: 1.08rem; margin: 0 0 2px; }
+  .role-org { font-size: 0.92rem; color: var(--ink-soft); margin: 0 0 14px; }
+  .role ul { margin: 0; padding-left: 18px; color: var(--ink-soft); font-size: 0.93rem; }
+  .role li { margin-bottom: 7px; }
+
+  /* Education */
+  .edu-item { display: grid; grid-template-columns: 150px 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--pink-line); }
+  .edu-item:last-child { border-bottom: none; }
+  .edu-item:first-child { padding-top: 0; }
+  .edu-item h3 { font-family: var(--serif); font-size: 1.05rem; margin: 0 0 4px; }
+  .edu-item .org { color: var(--ink-soft); font-size: 0.93rem; margin: 0 0 8px; }
+  .edu-item p.detail { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  /* Projects */
+  .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .project-card {
+    background: var(--surface);
+    border: 1px solid var(--pink-line);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+  }
+  .project-tag { font-size: 0.72rem; font-weight: 600; color: var(--pink-deep); text-transform: none; margin-bottom: 10px; display: block; }
+  .project-card h3 { font-family: var(--serif); font-size: 1.05rem; margin: 0 0 10px; }
+  .project-card p { color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 14px; }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 7px; }
+  .pill { font-size: 0.76rem; background: var(--surface-2); color: var(--ink-soft); padding: 4px 10px; border-radius: 999px; }
+
+  /* Skills */
+  .skill-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 32px; }
+  .skill-group h3 { font-family: var(--serif); font-size: 1rem; margin: 0 0 12px; }
+  .skill-group .pill-row .pill { background: var(--surface); border: 1px solid var(--pink-line); }
+
+  /* Certifications */
+  .cert-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cert-item {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--surface); border: 1px solid var(--pink-line); border-radius: 14px; padding: 16px 18px;
+  }
+  .cert-mark { font-family: var(--serif); font-weight: 700; color: var(--pink-deep); font-size: 0.95rem; white-space: nowrap; }
+  .cert-item p { margin: 0; font-size: 0.9rem; color: var(--ink-soft); }
+
+  /* Contact */
+  #contact { padding-bottom: 60px; }
+  .contact-box {
+    background: linear-gradient(135deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--pink-line);
+    border-radius: var(--radius);
+    padding: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    box-shadow: var(--shadow);
+  }
+  .contact-box p { max-width: 40ch; color: var(--ink-soft); margin: 0; font-size: 0.95rem; }
+  .contact-links { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+  .btn {
+    background: var(--pink-deep); color: #fff; padding: 11px 22px; border-radius: 999px;
+    font-weight: 600; font-size: 0.9rem; display: inline-block;
+  }
+  .btn:hover { background: var(--ink); text-decoration: none; }
+  footer.note { text-align: center; color: var(--ink-faint); font-size: 0.8rem; padding: 30px 0 50px; }
+
+  @keyframes riseIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  #top .hero-role, #top .hero-name, #top .hero-line, #top .hero-contact, #top .stat-row {
+    animation: riseIn 0.6s ease both;
+  }
+  #top .hero-role { animation-delay: 0.02s; }
+  #top .hero-name { animation-delay: 0.08s; }
+  #top .hero-line { animation-delay: 0.16s; }
+  #top .hero-contact { animation-delay: 0.24s; }
+  #top .stat-row { animation-delay: 0.32s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    #top .hero-role, #top .hero-name, #top .hero-line, #top .hero-contact, #top .stat-row { animation: none; }
+  }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+    .mobile-bar {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 20px; border-bottom: 1px solid var(--pink-line);
+      position: sticky; top: 0; background: var(--bg); z-index: 5;
+    }
+    .mobile-bar .brand { font-size: 1rem; }
+    .mobile-bar button {
+      background: var(--surface-2); border: 1px solid var(--pink-line); border-radius: 10px;
+      padding: 8px 12px; font-family: var(--sans); color: var(--ink); font-size: 0.85rem;
+    }
+    .mobile-nav {
+      display: none; flex-direction: column; gap: 2px; padding: 10px 20px 18px;
+      border-bottom: 1px solid var(--pink-line);
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { padding: 9px 4px; color: var(--ink-soft); font-size: 0.92rem; }
+    main { padding: 32px 20px 20px; }
+    .stat-row { grid-template-columns: 1fr 1fr; }
+    .role, .edu-item { grid-template-columns: 1fr; gap: 6px; }
+    .two-col, .project-grid, .skill-groups, .cert-list { grid-template-columns: 1fr; }
+    .contact-box { flex-direction: column; align-items: flex-start; }
+    .contact-links { align-items: flex-start; }
+  }
 </style>
 </head>
 <body>
 
-  <nav class="topnav">
-    <div class="topnav-inner">
-      <a href="#top" class="brand">Aishwarya <span>Ningaraju</span></a>
-      <ul class="nav-links">
-        <li><a href="#summary" data-target="summary">Summary</a></li>
-        <li><a href="#experience" data-target="experience">Experience</a></li>
-        <li><a href="#education" data-target="education">Education</a></li>
-        <li><a href="#projects" data-target="projects">Projects</a></li>
-        <li><a href="#skills" data-target="skills">Skills</a></li>
-        <li><a href="#certifications" data-target="certifications">Certifications</a></li>
-        <li><a href="#contact" data-target="contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<div class="mobile-bar">
+  <div class="brand">Aishwarya Ningaraju</div>
+  <button id="navToggle" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+</div>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#top">Top</a>
+  <a href="#summary">Summary</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <header class="hero" id="top">
-    <div class="wrap">
-      <div class="eyebrow">London, United Kingdom</div>
-      <h1 class="name">Aishwarya Mudravalli Ningaraju</h1>
-      <div class="role-line">Cloud &amp; Data Engineer with an Azure infrastructure background and MSc Data Science</div>
-      <p class="tagline">I build the pipelines that move infrastructure, and the ones that move data.</p>
-      <div class="hero-links">
-        <a href="mailto:aishwaryamn7373@gmail.com">aishwaryamn7373@gmail.com</a>
-        <a href="https://www.linkedin.com/in/aishwarya-mudravalli-ningaraju-a12310189" target="_blank" rel="noopener">LinkedIn</a>
-        <span class="badge">Open to full-time · part-time · contract</span>
-      </div>
+<div class="layout">
+  <aside class="sidebar">
+    <div>
+      <div class="brand">Aishwarya<br>Ningaraju<span>Cloud &amp; Data Professional</span></div>
+      <nav class="nav">
+        <a href="#top">Top</a>
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <div class="stats-strip">
-      <div class="stat"><span class="num">2+</span><span class="label">Years Professional Experience</span></div>
-      <div class="stat"><span class="num">5</span><span class="label">Certifications</span></div>
-      <div class="stat"><span class="num">4</span><span class="label">Projects &amp; Infrastructure Highlights</span></div>
-      <div class="stat"><span class="num">MSc</span><span class="label">Data Science, Univ. of Greenwich</span></div>
+    <div class="sidebar-foot">
+      <span class="loc">London, United Kingdom</span>
+      Open to full-time, part-time &amp; contract roles
     </div>
-  </header>
+  </aside>
 
   <main>
 
+    <section id="top">
+      <p class="hero-role">Cloud &amp; Data Professional</p>
+      <h1 class="hero-name">Aishwarya Mudravalli<br>Ningaraju</h1>
+      <p class="hero-line">Azure infrastructure background with an MSc in Data Science. I build the pipelines that move infrastructure, and the ones that move data.</p>
+      <div class="hero-contact">
+        <a class="chip link" href="mailto:aishwaryamn7373@gmail.com">aishwaryamn7373@gmail.com</a>
+        <a class="chip link" href="https://www.linkedin.com/in/aishwarya-mudravalli-ningaraju-a12310189" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="chip">Open to full-time · part-time · contract</span>
+      </div>
+      <div class="stat-row">
+        <div class="stat"><div class="num">2+</div><div class="label">Years professional experience</div></div>
+        <div class="stat"><div class="num">5</div><div class="label">Certifications</div></div>
+        <div class="stat"><div class="num">5</div><div class="label">Projects &amp; infrastructure highlights</div></div>
+        <div class="stat"><div class="num">MSc</div><div class="label">Data Science, Univ. of Greenwich</div></div>
+      </div>
+    </section>
+
     <section id="summary">
-      <div class="wrap">
-        <div class="section-head"><span class="idx">01</span><h2>Summary</h2></div>
-        <p class="summary-text">MSc Data Science graduate with over two years of professional experience supporting cloud platforms, data analytics and automation solutions. Experienced across Azure DevOps, CI/CD pipelines, Terraform, PowerShell, Python, SQL, machine learning and BI tooling, with strong analytical, problem-solving and stakeholder-communication skills spanning cloud operations, AI validation and data-driven decision-making.</p>
-        <div class="summary-grid">
-          <div class="summary-card">
-            <h3>How I Work</h3>
-            <ul>
-              <li>Comfortable owning both sides of a system: the infrastructure it runs on, and the data flowing through it.</li>
-              <li>Strong on documentation and stakeholder communication, from CI/CD runbooks to healthcare data-governance audits.</li>
-              <li>Automate first: PowerShell, Terraform and scheduled jobs over manual, repeatable toil.</li>
-            </ul>
-          </div>
-          <div class="summary-card">
-            <h3>Currently</h3>
-            <ul>
-              <li>Data Analyst Intern at Voxydocs, London (remote)</li>
-              <li>Completing MSc Data Science, University of Greenwich</li>
-              <li>Based in London, open to full-time, part-time &amp; contract</li>
-            </ul>
-          </div>
+      <p class="eyebrow">Summary</p>
+      <h2>What I do</h2>
+      <p class="summary-text">MSc Data Science graduate with over two years of professional experience supporting cloud platforms, data analytics and automation solutions. Experienced across Azure DevOps, CI/CD pipelines, Terraform, PowerShell, Python, SQL, machine learning and BI tooling, with strong analytical, problem solving and stakeholder communication skills spanning cloud operations and data driven decision making.</p>
+      <div class="two-col">
+        <div>
+          <h3>How I work</h3>
+          <ul>
+            <li>Comfortable owning both sides of a system: the infrastructure it runs on, and the data flowing through it.</li>
+            <li>Strong on documentation and stakeholder communication, from CI/CD runbooks to governance and access reviews.</li>
+            <li>Automate first: PowerShell, Terraform and scheduled jobs over manual, repeatable toil.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Currently</h3>
+          <ul>
+            <li>Data Analyst Intern at Voxydocs, London (remote)</li>
+            <li>MSc Data Science, University of Greenwich — graduated with Distinction</li>
+            <li>Based in London, open to full-time, part-time &amp; contract</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section id="experience">
-      <div class="wrap">
-        <div class="section-head"><span class="idx">02</span><h2>Experience</h2></div>
-        <p class="section-intro">Each role tagged by its centre of gravity: cloud infrastructure or data.</p>
-        <div class="timeline">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I've worked</h2>
+      <p class="section-intro">Each role tagged by its centre of gravity: cloud infrastructure or data.</p>
 
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <span class="tag">DATA</span>
-            <div class="tl-head">
-              <div class="tl-role">Data Analyst Intern (Remote)</div>
-              <div class="tl-dates mono">APR 2026 — PRESENT</div>
-            </div>
-            <div class="tl-org">Voxydocs (Gen2Z LTD), London, United Kingdom</div>
-            <ul>
-              <li>Monitor data-tracking pipelines and run QA checks to keep reporting reliable.</li>
-              <li>Clean, validate and transform patient datasets with Python (Pandas) and SQL.</li>
-              <li>Build Power BI and Tableau dashboards tracking onboarding funnels and feature adoption.</li>
-              <li>Evaluate AI/OCR extraction accuracy against unstructured NHS prescription text.</li>
-              <li>Apply Row-Level Security principles and audit consent logs for UK healthcare data governance.</li>
-            </ul>
-          </div>
+      <div class="role">
+        <div class="role-meta">
+          <span class="tag">DATA</span>
+          <div class="role-dates">Apr 2026 — Present</div>
+        </div>
+        <div>
+          <p class="role-title">Data Analyst Intern (Remote)</p>
+          <p class="role-org">Voxydocs (Gen2Z LTD), London, United Kingdom</p>
+          <ul>
+            <li>Cleanse and validate data using Python (Pandas) and SQL to improve quality and consistency.</li>
+            <li>Build Power BI and Tableau dashboards to support business reporting and analytics.</li>
+            <li>Monitor data pipelines and run quality assurance checks to keep reporting reliable.</li>
+            <li>Collaborate with the team to resolve data quality issues across datasets.</li>
+            <li>Support ad hoc data analysis requests to inform business decisions.</li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <span class="tag">CLOUD</span>
-            <div class="tl-head">
-              <div class="tl-role">Associate Consultant</div>
-              <div class="tl-dates mono">AUG 2022 — DEC 2024</div>
-            </div>
-            <div class="tl-org">KPMG, Bangalore, India</div>
-            <ul>
-              <li>Built and monitored CI/CD pipelines in Azure DevOps; maintained service connections and app-registration secrets.</li>
-              <li>Authored Terraform (IaC) to provision Azure VMs, VNets, subnets and resource groups.</li>
-              <li>Wrote PowerShell automation for secret rotation and scheduled workloads, supporting cost optimisation.</li>
-              <li>Supported AKS operations including certificate renewals and chain/key updates on production pods.</li>
-              <li>Automated disk-cleanup and VM stability routines, reducing crash risk.</li>
-            </ul>
-          </div>
+      <div class="role">
+        <div class="role-meta">
+          <span class="tag">CLOUD</span>
+          <div class="role-dates">Aug 2024 — Dec 2024</div>
+        </div>
+        <div>
+          <p class="role-title">Associate Consultant</p>
+          <p class="role-org">KPMG Global Services, Bangalore, India</p>
+          <ul>
+            <li>Owned Azure AD app registration and certificate lifecycle management, including secret rotation and renewals, a specialised area within the team.</li>
+            <li>Advised internal teams and clients on Azure governance, RBAC, policy enforcement and cost optimisation.</li>
+            <li>Led provisioning of Azure infrastructure using Terraform and Azure DevOps across IaaS and PaaS workloads.</li>
+            <li>Supported enterprise AKS deployment, Container Registries and CI/CD pipelines.</li>
+            <li>Implemented Azure AD, Defender, Monitor and Log Analytics for diagnostics and performance tuning.</li>
+            <li>Managed Databricks workspaces and supported FinOps initiatives on Delta Lake and Unity Catalog.</li>
+          </ul>
+        </div>
+      </div>
 
-          <div class="tl-item">
-            <div class="tl-dot"></div>
-            <span class="tag">DEV</span>
-            <div class="tl-head">
-              <div class="tl-role">Intern</div>
-              <div class="tl-dates mono">MAR 2022 — MAY 2022</div>
-            </div>
-            <div class="tl-org">Wipro Limited, Bangalore, India</div>
-            <ul>
-              <li>Built backend features (Java) for an Online Pizza Ordering System, including authentication, sessions and order processing.</li>
-              <li>Designed and managed a relational SQL database for customers, inventory and order tracking.</li>
-            </ul>
-          </div>
+      <div class="role">
+        <div class="role-meta">
+          <span class="tag">CLOUD</span>
+          <div class="role-dates">Aug 2022 — Aug 2024</div>
+        </div>
+        <div>
+          <p class="role-title">Analyst</p>
+          <p class="role-org">KPMG Global Services, Bangalore, India</p>
+          <ul>
+            <li>Migrated resources across Azure subscriptions and handled daily service deployments.</li>
+            <li>Provisioned Azure infrastructure using Terraform, including VMs, VNets, subnets and resource groups.</li>
+            <li>Configured Azure VMs, storage accounts and resource groups, including disk and resize operations.</li>
+            <li>Performed VM backups and restores, and monitored VM health, performance and availability.</li>
+            <li>Set up Availability Sets, auto scaling and Load Balancers, and administered services with PowerShell.</li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="role">
+        <div class="role-meta">
+          <span class="tag">DEV</span>
+          <div class="role-dates">Mar 2022 — May 2022</div>
+        </div>
+        <div>
+          <p class="role-title">Intern</p>
+          <p class="role-org">Wipro Limited, Bangalore, India</p>
+          <ul>
+            <li>Built backend features in Java for an Online Pizza Ordering System, including authentication and sessions.</li>
+            <li>Developed order processing modules and designed a relational database for customers and inventory.</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section id="education">
-      <div class="wrap">
-        <div class="section-head"><span class="idx">03</span><h2>Education</h2></div>
-        <p class="section-intro">Formal study underpinning the data-science side of my work.</p>
-        <div class="edu-grid">
-          <div class="edu-card">
-            <span class="tl-dates mono">JAN 2025 — JAN 2026</span>
-            <h3>MSc Data Science</h3>
-            <div class="school">University of Greenwich, London</div>
-            <p><strong style="color:var(--pink-deep);">Graduated with Distinction.</strong> Coursework and MSc project applying NLP and classical/contextual ML methods to real-world text data, including Azure-integrated pipeline work.</p>
-          </div>
-          <div class="edu-card">
-            <span class="tl-dates mono">AUG 2018 — JUN 2022</span>
-            <h3>BE Computer Science</h3>
-            <div class="school">Don Bosco Institute of Technology, Bangalore</div>
-            <p>CGPA 8.8/10. Foundation in data structures, databases and software engineering.</p>
-          </div>
+      <p class="eyebrow">Education</p>
+      <h2>Formal study</h2>
+      <div class="edu-item">
+        <div class="role-dates">Jan 2025 — Jan 2026</div>
+        <div>
+          <h3>MSc Data Science</h3>
+          <p class="org">University of Greenwich, London</p>
+          <p class="detail">Pass with Distinction. Coursework and MSc project applying NLP and classical/contextual ML methods to real world text data.</p>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="role-dates">Aug 2018 — Jun 2022</div>
+        <div>
+          <h3>BE Computer Science</h3>
+          <p class="org">Don Bosco Institute of Technology, Bangalore</p>
+          <p class="detail">First Class with Distinction. Foundation in data structures, databases and software engineering.</p>
         </div>
       </div>
     </section>
 
     <section id="projects">
-      <div class="wrap">
-        <div class="section-head"><span class="idx">04</span><h2>Projects &amp; Infrastructure</h2></div>
-        <p class="section-intro">Academic and self-directed projects, alongside a highlight from professional infrastructure work.</p>
-        <div class="card-grid">
-
-          <div class="card">
-            <span class="tag">CLOUD · PROFESSIONAL</span>
-            <h3>Azure Infrastructure Automation</h3>
-            <p>Terraform-provisioned Azure environments and Azure DevOps pipelines built and operated during my time at KPMG, covering infrastructure-as-code, automated secret rotation, and AKS certificate management.</p>
-            <div class="chip-row">
-              <span class="chip">Terraform</span><span class="chip">Azure DevOps</span><span class="chip">PowerShell</span><span class="chip">AKS</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <span class="tag">DATA · MSC PROJECT</span>
-            <h3>Email Classification &amp; Summarisation</h3>
-            <p>Reproducible preprocessing pipeline for the Enron dataset; TF-IDF and classical ML baselines compared against DistilBERT embeddings, plus a transformer-based summarisation prototype.</p>
-            <div class="chip-row">
-              <span class="chip">Python</span><span class="chip">TF-IDF</span><span class="chip">DistilBERT</span><span class="chip">NLP</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <span class="tag">DATA · ACADEMIC PROJECT</span>
-            <h3>Smart Handwriting Recognizer</h3>
-            <p>Handwriting-recognition system converting handwritten text into digital text and speech, using CNN and RNN layers with OCR preprocessing to improve accessibility.</p>
-            <div class="chip-row">
-              <span class="chip">CNN</span><span class="chip">RNN</span><span class="chip">OCR</span><span class="chip">Text-to-Speech</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <span class="tag">DEV · ACADEMIC PROJECT</span>
-            <h3>Heart Disease Risk Prediction</h3>
-            <p>Predictive ML model estimating heart-disease risk from medical parameters, using Pandas/NumPy for data prep and scikit-learn baselines including logistic regression.</p>
-            <div class="chip-row">
-              <span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">Pandas</span>
-            </div>
-          </div>
-
+      <p class="eyebrow">Projects</p>
+      <h2>Projects &amp; infrastructure highlights</h2>
+      <p class="section-intro">Academic and self directed projects, alongside a highlight from professional infrastructure work.</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <span class="project-tag">Cloud · Professional</span>
+          <h3>Azure Infrastructure Automation</h3>
+          <p>Terraform provisioned Azure environments and Azure DevOps pipelines built and operated at KPMG, covering infrastructure as code, automated secret rotation, and AKS certificate management.</p>
+          <div class="pill-row"><span class="pill">Terraform</span><span class="pill">Azure DevOps</span><span class="pill">PowerShell</span><span class="pill">AKS</span></div>
+        </div>
+        <div class="project-card">
+          <span class="project-tag">Data · MSc Project</span>
+          <h3>Email Classification &amp; Summarisation</h3>
+          <p>Reproducible preprocessing pipeline for the Enron dataset; TF-IDF and classical ML baselines compared against DistilBERT embeddings, plus a transformer based summarisation prototype.</p>
+          <div class="pill-row"><span class="pill">Python</span><span class="pill">TF-IDF</span><span class="pill">DistilBERT</span><span class="pill">NLP</span></div>
+        </div>
+        <div class="project-card">
+          <span class="project-tag">Data · Academic Project</span>
+          <h3>Smart Handwriting Recognizer</h3>
+          <p>Handwriting recognition system converting handwritten text into digital text and speech, using CNN and RNN layers with OCR preprocessing to improve accessibility.</p>
+          <div class="pill-row"><span class="pill">CNN</span><span class="pill">RNN</span><span class="pill">OCR</span><span class="pill">Text to Speech</span></div>
+        </div>
+        <div class="project-card">
+          <span class="project-tag">Dev · Academic Project</span>
+          <h3>Art Gallery Management System</h3>
+          <p>Full stack system to manage exhibits, artists and sales records, with a relational database schema supporting inventory tracking and reporting.</p>
+          <div class="pill-row"><span class="pill">HTML/CSS</span><span class="pill">JavaScript</span><span class="pill">PHP</span><span class="pill">SQL</span></div>
         </div>
       </div>
     </section>
 
     <section id="skills">
-      <div class="wrap">
-        <div class="section-head"><span class="idx">05</span><h2>Skills</h2></div>
-        <p class="section-intro">Grouped the way I use them: running infrastructure, working with data, and the tools that connect them.</p>
-        <div class="skills-grid">
-          <div class="skill-col">
-            <h3>Cloud &amp; DevOps</h3>
-            <div class="skill-list">
-              <span class="chip">Microsoft Azure</span><span class="chip">Azure DevOps</span><span class="chip">CI/CD Pipelines</span>
-              <span class="chip">Terraform (IaC)</span><span class="chip">AKS</span><span class="chip">PowerShell</span>
-              <span class="chip">Azure Automation</span><span class="chip">App Registrations</span>
-            </div>
+      <p class="eyebrow">Skills</p>
+      <h2>What I work with</h2>
+      <p class="section-intro">Grouped the way I use them: running infrastructure, working with data, and the tools that connect them.</p>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Cloud &amp; DevOps</h3>
+          <div class="pill-row">
+            <span class="pill">Microsoft Azure</span><span class="pill">Azure DevOps</span><span class="pill">CI/CD Pipelines</span>
+            <span class="pill">Terraform (IaC)</span><span class="pill">AKS</span><span class="pill">PowerShell</span>
+            <span class="pill">Azure Automation</span><span class="pill">App Registrations</span><span class="pill">Certificate Management</span>
           </div>
-          <div class="skill-col">
-            <h3>Data &amp; Machine Learning</h3>
-            <div class="skill-list">
-              <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Pandas / NumPy</span>
-              <span class="chip">scikit-learn</span><span class="chip">NLP (TF-IDF, DistilBERT)</span><span class="chip">CNN / RNN / OCR</span>
-            </div>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Machine Learning</h3>
+          <div class="pill-row">
+            <span class="pill">Python</span><span class="pill">SQL</span><span class="pill">Pandas / NumPy</span>
+            <span class="pill">scikit-learn</span><span class="pill">NLP (TF-IDF, DistilBERT)</span><span class="pill">CNN / RNN / OCR</span>
           </div>
-          <div class="skill-col">
-            <h3>Tools &amp; BI</h3>
-            <div class="skill-list">
-              <span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">Git</span>
-              <span class="chip">Java</span><span class="chip">HTML / CSS / JavaScript</span>
-            </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; BI</h3>
+          <div class="pill-row">
+            <span class="pill">Power BI</span><span class="pill">Tableau</span><span class="pill">Git</span>
+            <span class="pill">Java</span><span class="pill">HTML / CSS / JavaScript</span>
           </div>
-          <div class="skill-col">
-            <h3>Working Style</h3>
-            <div class="skill-list">
-              <span class="chip">Problem Solving</span><span class="chip">Stakeholder Communication</span>
-              <span class="chip">Teamwork</span><span class="chip">Adaptability</span><span class="chip">Attention to Detail</span>
-            </div>
+        </div>
+        <div class="skill-group">
+          <h3>Working style</h3>
+          <div class="pill-row">
+            <span class="pill">Problem Solving</span><span class="pill">Stakeholder Communication</span>
+            <span class="pill">Teamwork</span><span class="pill">Adaptability</span><span class="pill">Attention to Detail</span>
           </div>
         </div>
       </div>
     </section>
 
     <section id="certifications">
-      <div class="wrap">
-        <div class="section-head"><span class="idx">06</span><h2>Certifications</h2></div>
-        <div class="cert-list">
-          <div class="cert-row"><b>AZ-900</b><span>Microsoft Azure Fundamentals</span></div>
-          <div class="cert-row"><b>OCI 2025</b><span>Oracle Cloud Infrastructure, Certified Data Science Professional</span></div>
-          <div class="cert-row"><b>Machine Learning with AI using Python</b><span>KSI</span></div>
-          <div class="cert-row"><b>Programming Foundations (JS, HTML, CSS)</b><span>Duke University, Coursera</span></div>
-          <div class="cert-row"><b>Deep Learning</b><span>Simplilearn</span></div>
+      <p class="eyebrow">Certifications</p>
+      <h2>Certifications</h2>
+      <div class="cert-list">
+        <div class="cert-item">
+          <span class="cert-mark">AZ-900</span>
+          <p>Microsoft Azure Fundamentals</p>
+        </div>
+        <div class="cert-item">
+          <span class="cert-mark">OCI 2025</span>
+          <p>Oracle Cloud Infrastructure, Certified Data Science Professional</p>
+        </div>
+        <div class="cert-item">
+          <span class="cert-mark">KSI</span>
+          <p>Machine Learning with AI using Python</p>
+        </div>
+        <div class="cert-item">
+          <span class="cert-mark">Coursera</span>
+          <p>Programming Foundations with JavaScript, HTML and CSS — Duke University</p>
+        </div>
+        <div class="cert-item">
+          <span class="cert-mark">Simplilearn</span>
+          <p>Deep Learning</p>
         </div>
       </div>
     </section>
 
-  </main>
-
-  <footer id="contact">
-    <div class="wrap">
-      <div class="section-head"><span class="idx">07</span><h2>Contact</h2></div>
-      <p>Based in London and open to full-time, part-time and contract roles across cloud engineering and data science. Get in touch, or connect on LinkedIn.</p>
-      <div class="contact-links">
-        <a href="mailto:aishwaryamn7373@gmail.com">✉ aishwaryamn7373@gmail.com</a>
-        <a href="https://www.linkedin.com/in/aishwarya-mudravalli-ningaraju-a12310189" target="_blank" rel="noopener">↗ LinkedIn Profile</a>
+    <section id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Get in touch</h2>
+      <div class="contact-box">
+        <p>Based in London and open to full-time, part-time and contract roles across cloud engineering and data science.</p>
+        <div class="contact-links">
+          <a class="btn" href="mailto:aishwaryamn7373@gmail.com">Email me</a>
+          <a href="https://www.linkedin.com/in/aishwarya-mudravalli-ningaraju-a12310189" target="_blank" rel="noopener">↗ LinkedIn profile</a>
+        </div>
       </div>
-      <div class="foot-note">Updated regularly. Thank you for taking the time to look through my work.</div>
-    </div>
-  </footer>
+    </section>
+
+    <footer class="note">Updated regularly. Thank you for taking the time to look through my work.</footer>
+
+  </main>
+</div>
 
 <script>
-  (function(){
-    var ids = ['summary','experience','education','projects','skills','certifications','contact'];
-    var sections = ids.map(function(id){ return document.getElementById(id); });
-    var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
-
-    function updateNav(){
-      var viewportMid = window.innerHeight * 0.35;
-      var current = ids[0];
-      sections.forEach(function(sec, i){
-        if(!sec) return;
-        var rect = sec.getBoundingClientRect();
-        if(rect.top < viewportMid){ current = ids[i]; }
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mobileNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
       });
-      links.forEach(function(link){
-        if(link.getAttribute('data-target') === current){ link.classList.add('active'); }
-        else{ link.classList.remove('active'); }
-      });
-    }
-
-    window.addEventListener('scroll', updateNav, {passive:true});
-    window.addEventListener('resize', updateNav);
-    updateNav();
-  })();
+    });
+  }
 </script>
 
 </body>
